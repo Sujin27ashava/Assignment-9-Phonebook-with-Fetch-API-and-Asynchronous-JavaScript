@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone book</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Phonebook</h1>
+    <div class="container">
+      <div>
+        <h1>New Contact</h1>
+        <!-- Contact Form -->
+        <form action="" id="contactForm">
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter Name"
+            maxlength="10"
+            minlength="3"
+            required
+          />
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Enter Phone Number"
+            pattern="[0-9]{10}"
+            maxlength="10"
+            minlength="10"
+            required
+          />
+          <button type="submit">Add Contact</button>
+        </form>
+      </div>
+      <div>
+        <!-- Search -->
+        <h1>Search</h1>
+        <input
+          type="text"
+          id="search"
+          placeholder="Search By Name or Phone number"
+        />
+        <!-- Contact List -->
+        <div id="contactList">
+          <h3 style="text-align: center">Contact List</h3>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
